@@ -116,19 +116,90 @@ header{
   line-height: 1.5vw;
 }
 
+/* Schoolのcss */
+#school{
+  margin-top:20vw;
+}
+
+#school > h1{
+  position:relative;
+  top:-5vw;
+  text-align:center;
+  font-size:3vw;
+}
+
+#school > span{
+  position:relative;
+  top:-5vw;
+  display:block;
+  margin:0 auto;
+  height:2vw;
+  width:10vw;
+  font-size:1.2vw;
+  line-height:2vw;
+  color:#fff;
+  text-align:center;
+  background: #bfc9bd;
+}
+
+.school-wrap{
+  position:relative;
+  left:5vw;
+  background:#bfc9bd;
+  padding:5vw 0 2vw 0;
+}
+
+
+.school-wrap > p{
+  color:#fff;
+  position:relative;
+  font-size:1.5vw;
+  top:-2.5vw;
+  text-align:right;
+  margin-right:6vw;
+}
+
+.school-wrap > img{
+  position:relative;
+  left:-5vw;
+  width:100%;
+}
 
 
 
 /* Accessのcss */
-.access-wrap{
+#access{
+  margin-top:10vw;
   background:#efe5cb;
-  padding-top:20vw;
+  padding:10vw 0 0 0;
 }
 
-#access{
+.access-wrap{
   background:#fff;
   width:90%;
   margin:0 auto;
+
+}
+
+.access-wrap > h1{
+  text-align:center;
+  font-size:3vw;
+  position:relative;
+  top:-2vw;
+}
+
+.access-wrap > span{
+  position:relative;
+  top:-2vw;
+  display:block;
+  margin:0 auto;
+  height:2vw;
+  width:10vw;
+  font-size:1.2vw;
+  line-height:2vw;
+  color:#fff;
+  text-align:center;
+  background: #c1d1e0;
 }
 
 .access-flex{
