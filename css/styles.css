@@ -3,6 +3,11 @@ html{
   color:#707070;
 }
 
+h1{
+  font-size:3vw;
+}
+
+
 header{
   display:inline-block;
   width:100%;
@@ -70,7 +75,7 @@ header{
 }
 
 .nav > a:hover{
-  background:#bfc9bd;
+  background:#ACCCA6;
   border-radius: 50px;
 }
 
@@ -96,7 +101,7 @@ header{
   height:10vw;
   line-height: 2vw;
   writing-mode: vertical-rl;
-  background: #c1d1e0;
+  background: #A5C6E5;
   color:#FFF;
   font-size:1vw;
   padding-top:1vw;
@@ -116,16 +121,106 @@ header{
   line-height: 1.5vw;
 }
 
+.flow-hidden{
+  overflow-x: hidden;
+}
+
+.flow-hidden > img{
+  display:block;
+  margin:0 5vw 0 auto;
+  width:15vw;
+}
+
+.supports-wrap{
+  width:100%;
+  background:#A5C6E5;
+  color:#fff;
+  position:relative;
+  left:-5vw;
+  padding:5vw 0 2vw 0;
+}
+
+.supports-wrap > p{
+  position:relative;
+  font-size:1.5vw;
+  top:-2.5vw;
+  text-align:right;
+  margin-right:1vw;
+}
+
+
+.supports{
+  display:flex;
+  position:relative;
+  left:5vw;
+}
+.support{
+  flex:1;
+}
+
+.support > h2 {
+  margin:10vw auto 0 5vw;
+  font-size:2.2vw;
+}
+
+.support > span{
+  font-size:.8vw;
+  margin-left:5vw;
+}
+
+.support > p{
+  font-size:1.2vw;
+  height:10vw;
+  margin:15vw 5vw 8vw 5vw;
+  line-height: 2vw;
+}
+
+.support:first-child{
+  background: url(../dotinstall_img/community.png);
+  background-size:100%;
+}
+
+.support:nth-child(2){
+  background: url(../dotinstall_img/work.png);
+  background-size:100%;
+}
+
+.support:nth-child(3){
+  background: url(../dotinstall_img/house.png);
+  background-size:100%;
+}
+
+.support > a{
+  display:block;
+  text-align:center;
+  margin: 0 auto 5vw auto;
+  width:22vw;
+  height:3vw;
+  line-height:3vw;
+  font-size:1.2vw;
+  border:solid 1px #fff;
+  border-radius:5vw;
+  color:#fff;
+}
+
+.support > a:hover{
+  background:#fff;
+  color:#707070;
+}
+
+
+
+
 /* Schoolのcss */
 #school{
-  margin-top:20vw;
+  padding-top:20vw;
+  overflow-x: hidden;
 }
 
 #school > h1{
   position:relative;
   top:-5vw;
   text-align:center;
-  font-size:3vw;
 }
 
 #school > span{
@@ -139,13 +234,20 @@ header{
   line-height:2vw;
   color:#fff;
   text-align:center;
-  background: #bfc9bd;
+  background: #ACCCA6;
 }
+
+#school > img{
+  display:block;
+  margin:0 auto 0 5vw;
+  width:15vw;
+}
+
 
 .school-wrap{
   position:relative;
   left:5vw;
-  background:#bfc9bd;
+  background:#ACCCA6;
   padding:5vw 0 2vw 0;
 }
 
@@ -159,18 +261,259 @@ header{
   margin-right:6vw;
 }
 
-.school-wrap > img{
+.school-menu{
   position:relative;
   left:-5vw;
   width:100%;
+  height:56.25vw;
+  background:url(../dotinstall_img/school.png);
+  background-size:cover;
+  padding:5vw;
+}
+
+.school-menu >dl{
+  color:#fff;
+}
+
+.school-menu dt{
+  margin-top:3vw;
+}
+.school-menu dt:first-child{
+  margin-top:0;
+}
+
+.school-menu dt,dd{
+  line-height:3vw;
+}
+
+.school-menu > a{
+  display:block;
+  text-align:center;
+  margin-top:10vw;
+  width:25vw;
+  height:4vw;
+  line-height:4vw;
+  font-size:1.2vw;
+  border:solid 1px #fff;
+  border-radius:5vw;
+  color:#fff;
+}
+
+.school-menu > a:hover{
+  background:#fff;
+  color:#707070;
+}
+
+
+
+/* #newsのcss */
+#news{
+  margin-top:20vw;
+}
+
+#news >h1{
+  text-align: center;
+}
+
+#news > span{
+  display:block;
+  margin:0 auto;
+  height:2vw;
+  width:10vw;
+  font-size:1.2vw;
+  line-height:2vw;
+  color:#fff;
+  text-align:center;
+  background: #A5C6E5;
+}
+
+.articles{
+  display:flex;
+  justify-content: center;
+  margin-top:5vw;
+}
+
+.articles  article{
+  width:25vw;
+  border:solid 1px #707070;
+  border-radius:2vw;
+}
+
+.articles > a{
+  margin-right:5vw;
+}
+.articles article:hover{
+  background:#f5f5f5;
+}
+
+.articles > a:last-child{
+  margin-right:0;
+}
+
+.articles article > img{
+  width:90%;
+  display:block;
+  height:26vw;
+  object-fit: cover;
+  margin:1.5vw auto;
+  border-radius:2vw;
+}
+
+.articles h2{
+  width:90%;
+  border-bottom:solid 1px #707070;
+  margin:3vw auto 0 auto;
+  text-align:center;
+  font-size:1.5vw;
+  line-height:2.5vw;
+}
+
+article p{
+  margin:2vw auto 2vw auto;
+  width:90%;
+  text-align:right;
+  font-size:1vw;
+  color:#A5C6E5;
+}
+
+.news-buttom{
+  display:block;
+  text-align:center;
+  margin:5vw auto 0 auto;
+  width:30vw;
+  height:5vw;
+  line-height:5vw;
+  font-size:1.5vw;
+  border-radius:5vw;
+  background:#A5C6E5;
+  color:#fff;
+}
+
+.news-buttom:hover{
+  background:#fff;
+  border:solid 1px #A5C6E5;
+  color:#A5C6E5;
+}
+
+
+
+
+/* #membersのcss */
+#members{
+  width:90%;
+  margin:20vw auto 0 auto;
+  z-index:-100;
+}
+
+#members >h1{
+  text-align: center;
+}
+
+#members > span{
+  display:block;
+  margin:0 auto;
+  height:2vw;
+  width:10vw;
+  font-size:1.2vw;
+  line-height:2vw;
+  color:#fff;
+  text-align:center;
+  background: #EFD79A;
+  margin-bottom:5vw;
+}
+
+.memberA{
+  width:100%;
+  height:32vw;
+  background:url(../dotinstall_img/memberA.png);
+  background-size: cover;  
+  background-position: center;
+}
+
+.memberB{
+  width:100%;
+  height:32vw;
+  background:url(../dotinstall_img/memberB.png);
+  background-size: cover;  
+  background-position: center;
+}
+
+.memberC{
+  width:100%;
+  height:32vw;
+  background:url(../dotinstall_img/memberC.png);
+  background-size: cover;  
+  background-position: center;
+}
+
+
+.member-info{
+  width:15vw;
+  height:15vw;
+  padding:1vw;
+  background:#fff;
+  text-align:center;
+  position:relative;
+  top:50%;
+  transform:translate(50%,-50%);
+  font-size:1.2vw;
+}
+
+.right{
+  right:-67%;
+}
+
+
+.number1{
+  color:#A5C6E5;
+  margin:2vw auto;
+}
+
+.nameA{
+  border-top:solid 3px #A5C6E5;
+  margin-top:2.5vw;
+  padding-top:1.5vw;
+}
+
+.number2{
+  color:#EFD79A;
+  margin:2vw auto;
+}
+
+.nameB{
+  border-top:solid 3px #EFD79A;
+  margin-top:2.5vw;
+  padding-top:1.5vw;
+}
+
+.number3{
+  color:#ACCCA6;
+  margin:2vw auto;
+}
+
+.nameC{
+  border-top:solid 3px #ACCCA6;
+  margin-top:2.5vw;
+  padding-top:1.5vw;
+}
+
+
+
+.bg{
+  background:#EFD79A;
+  width:100%;
+  height: 20vw;
+  position:relative;
+  top:-10vw;
+  margin-bottom:-10vw;
+  z-index:-50;
 }
 
 
 
 /* Accessのcss */
 #access{
-  margin-top:10vw;
-  background:#efe5cb;
+  background:#EFD79A;
   padding:10vw 0 0 0;
 }
 
@@ -183,7 +526,6 @@ header{
 
 .access-wrap > h1{
   text-align:center;
-  font-size:3vw;
   position:relative;
   top:-2vw;
 }
@@ -199,7 +541,7 @@ header{
   line-height:2vw;
   color:#fff;
   text-align:center;
-  background: #c1d1e0;
+  background: #A5C6E5;
 }
 
 .access-flex{
@@ -240,7 +582,7 @@ dd{
 
 /* footerのcss */
 footer{
-  background:#c1d1e0;
+  background:#A5C6E5;
   height:5vw;
 }
 
